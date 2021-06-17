@@ -1,0 +1,72 @@
+$default-font-size: 2rem;
+$spacing: 2rem;
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  font-size: $default-font-size;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    fieldset {
+      border: none;
+      padding: 0;
+    }
+
+    & > fieldset {
+      margin-bottom: $spacing;
+
+      // we do this because we want to keep "proper" accessibilty
+      & > legend {
+        position: absolute;
+        left: -200vw;
+        top: -200vh;
+      }
+    }
+
+    fieldset#channels {
+      & > * {
+        margin-bottom: math.div($spacing, 2);
+      }
+
+      div {
+        display: flex;
+        gap: $spacing;
+
+        span {
+          width: 25%;
+        }
+      }
+    }
+
+    input{
+      display: block;
+      font-size: $default-font-size;
+
+      &[name='media-plan'] {
+        margin-top: 1rem;
+      }
+    }
+
+    fieldset#submit {
+      margin-left: auto;
+
+      button {
+        border-radius: 1rem;
+        border: none;
+        width: 10rem;
+        height: 3rem;
+
+        &:first-of-type {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

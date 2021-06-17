@@ -1,0 +1,16 @@
+fieldset.channel {
+   display: flex;
+   gap: $spacing;
+
+   & > * {
+      width: 25%;
+      float: left;
+   }
+
+   input {
+      &[type='radio'] {
+         height: 2.5rem;
+         margin: 0;
+      }
+   }
+}

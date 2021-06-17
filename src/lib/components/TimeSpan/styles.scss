@@ -1,0 +1,9 @@
+#time-span {
+   display: flex;
+   gap: $spacing;
+   margin: $spacing 0;
+
+   input {
+      margin-top: 1rem;
+   }
+}
