@@ -1,6 +1,7 @@
 fieldset.channel {
    display: flex;
    gap: $spacing;
+   margin: 0;
 
    & > * {
       width: 25%;
