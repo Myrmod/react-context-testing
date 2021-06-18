@@ -41,8 +41,6 @@ export default function formatCurrency(input: HTMLInputElement | string, blur?: 
      // Limit decimal to only 2 digits
      right_side = right_side.substring(0, 2)
 
-     console.log('XXX', left_side, 'YYY');
-
      if (left_side === '  ') {
        left_side = '0'
      }
